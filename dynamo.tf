@@ -1,14 +1,14 @@
-resource "aws_dynamodb_table" "dynamodb_terraform_cloud_lock" {
-  name         = "TerraformCloudLock"
-  hash_key     = "LockID"
-  billing_mode = "PAY_PER_REQUEST"
+#resource "aws_dynamodb_table" "dynamodb_terraform_cloud_lock" {
+#  name         = "TerraformCloudLock"
+#  hash_key     = "LockID"
+#  billing_mode = "PAY_PER_REQUEST"
 
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
+#  attribute {
+#    name = "LockID"
+#    type = "S"
+#  }
 
-  tags = {
-    Name     = "Terraform state lock table for cloud common"
-  }
-}
+#  tags = {
+#    Name     = "Terraform state lock table for cloud common"
+#  }
+#}
